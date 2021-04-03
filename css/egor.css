@@ -471,6 +471,12 @@ nav .nav__menu .nav__link {
 nav .nav__menu .nav__link:hover {
   opacity: 0.5;
 }
+nav .nav__menu li {
+  padding: 2px 0px;
+}
+nav .nav__menu li a {
+  width: 100%;
+}
 nav .nav__menu li:last-child a {
   border: none;
 }
