@@ -1,0 +1,47 @@
+@import 'reset.scss';
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .nav__logo {}
+    .nav__menu {
+        flex-basis: 87%;
+        display: flex;
+        justify-content: space-between;
+        .nav__link {
+            text-decoration: none;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 140%;
+            padding: 0 10px;
+            border-right: 1px solid #0E0019;
+            color: #0E0019;
+            position: relative;
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+        li {
+            &:last-child a {
+                border: none;
+            }
+            ul {
+                display: none;
+                position: absolute;
+            }
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+}
