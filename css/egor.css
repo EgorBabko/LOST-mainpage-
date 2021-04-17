@@ -782,11 +782,25 @@ footer {
   }
 
   nav .nav__logo {
-    width: 17%;
+    width: 20%;
   }
 
+  footer .footer__row {
+    min-height: 100px;
+  }
+  footer .footer__row a {
+    font-size: 12px;
+  }
+  footer .footer__row .footer__logo {
+    width: 20%;
+  }
+
+  .popular .popular__list {
+    min-height: 1200px;
+  }
   .popular .popular__article h3 {
     font-size: 18px;
+    line-height: 30px;
   }
   .popular .popular__article p {
     font-size: 14px;
@@ -796,8 +810,18 @@ footer {
     padding-right: 10px;
   }
 
+  h2 {
+    font-size: 28px !important;
+  }
+
   header {
     height: 660px;
+  }
+  header .header__main {
+    text-align: center;
+  }
+  header .header__help {
+    margin: 0 auto;
   }
   header .header__title {
     max-width: 200px;
@@ -811,5 +835,57 @@ footer {
   header .header__help {
     font-size: 24px;
     max-width: 315px;
+  }
+
+  .advantages .advantages__title {
+    text-align: center;
+  }
+  .advantages .advantages__go p {
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 375px) {
+  .advantages .advantages__row {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .popular .popular__list {
+    min-height: 1300px;
+  }
+  .popular .popular__item img {
+    max-height: 100px;
+  }
+}
+@media screen and (max-width: 320px) {
+  header .header__text {
+    font-size: 18px;
+  }
+  header .header__help {
+    font-size: 20px;
+  }
+
+  footer .footer__row a {
+    font-size: 10px;
+  }
+
+  .advantages .advantages__row {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .popular .popular__article h3 {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .popular .popular__article p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .popular .popular__list {
+    min-height: 1000px;
+  }
+  .popular .popular__item img {
+    max-height: 80px;
   }
 }
