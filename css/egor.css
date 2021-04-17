@@ -869,6 +869,10 @@ footer {
     font-size: 10px;
   }
 
+  h2 {
+    font-size: 20px !important;
+  }
+
   .advantages .advantages__row {
     font-size: 15px;
     line-height: 22px;
@@ -887,5 +891,19 @@ footer {
   }
   .popular .popular__item img {
     max-height: 80px;
+  }
+}
+@media screen and (max-width: 280px) {
+  footer .footer__row a {
+    font-size: 8px;
+  }
+
+  .popular .popular__article h3 {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  .popular .popular__article p {
+    font-size: 10px;
+    line-height: 16px;
   }
 }
