@@ -7,121 +7,220 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/98db508811.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/egor.css">
     <title>LOST - Homepage</title>
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="nav__logo">
-                <img src="img/logo.png" alt="logo">
+    <header>
+        <div class="container">
+            <nav>
+                <div class="nav__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <i class="fas fa-bars" id="button"></i>
+                <script>
+                    $('#button').click(function() {
+                        $("#button").css("display", "none");
+                        $(".nav__menu").css("display", "flex");
+                    });
+                </script>
+                <ul class="nav__menu">
+                    <li>
+                        <a class="nav__link" href="index_important.html">Важно</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_important_1.html">Статья о том</a></li>
+                            <li><a href="index_important_2.html">Статья об этом</a></li>
+                            <li><a href="index_important_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_important_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_important_5.html">Статья о статье</a></li>
+                            <li><a href="index_important_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_fun.html">Развлечения</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_fun_1.html">Статья о том</a></li>
+                            <li><a href="index_fun_2.html">Статья об этом</a></li>
+                            <li><a href="index_fun_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_fun_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_fun_5.html">Статья о статье</a></li>
+                            <li><a href="index_fun_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_psychology.html">Психология</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_psychology_1.html">Статья о том</a></li>
+                            <li><a href="index_psychology_2.html">Статья об этом</a></li>
+                            <li><a href="index_psychology_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_psychology_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_psychology_5.html">Статья о статье</a></li>
+                            <li><a href="index_psychology_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_alone.html">Один дома</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_alone_1.html">Статья о том</a></li>
+                            <li><a href="index_alone_2.html">Статья об этом</a></li>
+                            <li><a href="index_alone_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_alone_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_alone_5.html">Статья о статье</a></li>
+                            <li><a href="index_alone_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_work.html">Финансы и работа</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_work_1.html">Статья о том</a></li>
+                            <li><a href="index_work_2.html">Статья об этом</a></li>
+                            <li><a href="index_work_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_work_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_work_5.html">Статья о статье</a></li>
+                            <li><a href="index_work_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_health.html">Здоровье</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_health_1.html">Статья о том</a></li>
+                            <li><a href="index_health_2.html">Статья об этом</a></li>
+                            <li><a href="index_health_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_health_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_health_5.html">Статья о статье</a></li>
+                            <li><a href="index_health_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="index_law.html">Закон</a>
+                        <ul class="nav__submenu">
+                            <li><a href="index_law_1.html">Статья о том</a></li>
+                            <li><a href="index_law_2.html">Статья об этом</a></li>
+                            <li><a href="index_law_3.html">Статья об этом и о том</a></li>
+                            <li><a href="index_law_4.html">Статья о том и об этом</a></li>
+                            <li><a href="index_law_5.html">Статья о статье</a></li>
+                            <li><a href="index_law_6.html">Статья статейная</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__main">
+                <h1 class="header__title">Привет!</h1>
+                <div class="header__text">
+                    <p>Стесняешься задать вопрос?</p>
+                    <p>Не знаешь у кого спросить?</p>
+                    <p>Не получается найти нужную информацию?</p>
+                </div>
+                <p class="header__help">Тогда мы тебе поможем!</p>
             </div>
-            <ul class="nav__menu">
-                <li>
-                    <a class="nav__link" href="#">Важно</a>
-                    <ul class="nav__submenu">
-                        <li><a href="#">Статья о том</a></li>
-                        <li><a href="#">Статья об этом</a></li>
-                        <li><a href="#">Статья об этом и о том</a></li>
-                        <li><a href="#">Статья о том и об этом</a></li>
-                        <li><a href="#">Статья о статье</a></li>
-                        <li><a href="#">Кажется, я дебил</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Развлечения</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Психология</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Один дома</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Финансы и работа</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Здоровье</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a class="nav__link" href="#">Закон</a>
-                    <ul class="nav__popup">
-                        <li><a href="#">Статья 1</a></li>
-                        <li><a href="#">Статья 2</a></li>
-                        <li><a href="#">Статья 3</a></li>
-                        <li><a href="#">Статья 4</a></li>
-                        <li><a href="#">Статья 5</a></li>
-                        <li><a href="#">Статья 6</a></li>
-                    </ul>
-                </li>
-                <!-- <li>
-                    <a href="#">Развлечения</a>
-                    <ul></ul>
-                </li>
-                <li>
-                    <a href="#">Психология</a>
-                    <ul></ul>
-                </li>
-                <li>
-                    <a href="#">Один дома</a>
-                    <ul></ul>
-                </li>
-                <li>
-                    <a href="#">Финансы и работа</a>
-                    <ul></ul>
-                </li>
-                <li>
-                    <a href="#">Здоровье</a>
-                    <ul></ul>
-                </li>
-                <li>
-                    <a href="#">Закон</a>
-                    <ul></ul>
-                </li> -->
-            </ul>
-        </nav>
-    </div>
+        </div>
+    </header>
+    <main>
+        <section class="advantages">
+            <div class="container">
+                <h2 class="advantages__title">Здесь ты:</h2>
+                <div class="advantages__list">
+                    <div class="advantages__row">
+                        <p>сможешь узнать свои права, пройти <a href="#">тест на профориентацию</a> и многое другое</p>
+                    </div>
+                    <div class="advantages__row">
+                        <p>не стесняясь <a href="#">задать даже самый странный вопрос</a></p>
+                    </div>
+                    <div class="advantages__row">
+                        <p><a href="#">найти вдохновение для нового хобби</a></p>
+                    </div>
+                </div>
+                <div class="advantages__go">
+                    <p>Вперёд!</p>
+                </div>
+            </div>
+        </section>
+        <section class="popular">
+            <div class="container">
+                <div class="popular__list">
+                    <h2 class="popular__title">Популярные статьи</h2>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article1.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Перелёты для несовершеннолетних</h3>
+                                <p>Можно совершать перелёты без взрослых? Как это сделать и какие докуметны требуются...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article2.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Йога для начинающих</h3>
+                                <p>Сегодня мы сделали подборку топ упражнений для начинающих, которые можно выполнять...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article3.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Я не такой как всё: что мне с этим делать?</h3>
+                                <p>Часто в современном миры мы сталкиваемся с проблемой непонимания со стороны...</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article4.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Что посмотреть в свободное время?</h3>
+                                <p>Если вы задавались вопросом, что посмотреть в долгий скучный вечер, то вот подборка...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article5.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Профориентация: муки выбора профессии</h3>
+                                <p>Поступление в вуз или в университет — важный этап в жизни любого человека, поэтому множество...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__item">
+                        <a href="#">
+                            <img src="img/main/popular_article6.png" alt="article photo">
+                            <div class="popular__article">
+                                <h3>Онлайн-экскурсии по музеям</h3>
+                                <p>В период пандемии многие привычные вещи изменились, например походы в музеи. Но...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+                <div class="footer__logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <a href="https://www.instagram.com/alice_tarnovskaya/">Instagram</a>
+                <a href="#">Telegram</a>
+                <a href="mailto:Email_123@gmail.com">Email_123@gmail.com</a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
